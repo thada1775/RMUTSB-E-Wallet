@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Style="{StaticResource PageStyle}"
+             x:Class="EWalletMD.Views.NewContactPage"
+             Title="เพิ่มบัญชี">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="บันทึก" Clicked="Save_Clicked" />
+        
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Label Text="ชื่อ"  FontSize="Medium" />
+            <StackLayout Orientation="Horizontal">
+                <Entry Placeholder="ตั้งชื่อบัญชี" x:Name="nameEntry" FontSize="Small" HorizontalOptions="FillAndExpand" />
+
+                <ImageButton Source="qr_code.png"
+                    HorizontalOptions="Center"
+                    WidthRequest="30"
+                    BackgroundColor="White"
+                    x:Name="qrcodeButton"
+                    Clicked="scanButton_Clicked"
+                    FlexLayout.AlignSelf="Center"
+                    FlexLayout.Grow="1"
+                    Aspect="AspectFit"/>
+            </StackLayout>
+            <Label Text="กุญแจสาธารณะ" FontSize="Medium" />
+            <Entry Placeholder="ค่ากุญแจสาธารณะ" x:Name="pubkeyEntry" FontSize="Small" />
+            <ImageButton Source="bin.png"
+                    IsVisible="False"
+                    WidthRequest="50" 
+                    HeightRequest="50"
+                    Clicked="deleteButton_Clicked" 
+                    HorizontalOptions="End" x:Name="deleteButton"
+                    Aspect="AspectFit"
+                    BackgroundColor="Transparent"
+                    Padding="10"
+                    CornerRadius="20"
+                    />
+            <!--<Button Text="ลบ" x:Name="deleteButton" Clicked="deleteButton_Clicked" 
+                    BackgroundColor="Red" IsVisible="False" HorizontalOptions="End" 
+                    CornerRadius="20"
+                    WidthRequest="60"
+                    HeightRequest="40"/>-->
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

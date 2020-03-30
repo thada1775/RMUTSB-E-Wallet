@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Style="{StaticResource PageStyle}"
+             x:Class="EWalletMD.Views.ContactPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="เพิ่ม" Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+
+
+        <StackLayout Padding="30,0">
+            <Label Text="บัญชีผู้ใช้" Grid.Row="1"
+                FontSize="30"
+                       x:Name="titleLabel"
+                   TextColor="Blue"
+                   HorizontalOptions="Center"/>
+            <ListView x:Name="AccountList" HasUnevenRows="True" ItemSelected="AccountList_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                        <RowDefinition Height="Auto" />
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1*" />
+                                        <ColumnDefinition Width="4*" />
+                                    </Grid.ColumnDefinitions>
+                                    <StackLayout Grid.Row="0" Grid.Column="0" Grid.RowSpan="3" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+                                        <Image Source = "{Binding ImageIcon}">
+                                            <Image.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">30</On>
+                                                    <On Platform="Android,Windows">25</On>
+                                                </OnPlatform>
+                                            </Image.HeightRequest>
+                                        </Image>
+                                    </StackLayout>
+
+                                    <Label  Grid.Column="1" Grid.Row="0" Text="{Binding Name}" FontAttributes="Bold" FontSize="Medium" HorizontalTextAlignment="Start" HorizontalOptions="Start" Margin="0,2"/>
+                                    <Label  Grid.Column="1" Grid.Row="1" Text="{Binding Address}" FontSize="Small" HorizontalTextAlignment="Start" HorizontalOptions="Start" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <StackLayout Grid.Row="2" Grid.RowSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Label x:Name="indicateLabel" Text="*กรุณาเพิ่มบัญชี" FontSize="Medium" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
+

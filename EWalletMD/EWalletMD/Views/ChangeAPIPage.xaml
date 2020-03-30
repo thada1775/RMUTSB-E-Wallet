@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Style="{StaticResource PageStyle}"
+             Title="Block Explorer"
+             x:Class="EWalletMD.Views.ChangeAPIPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30,0" VerticalOptions="CenterAndExpand">
+            <ActivityIndicator IsRunning="true" x:Name="Indicator" IsVisible="False"/>
+            <Label Text="กำหนดที่อยู่ของ Block Explorer"
+                   TextColor="Black"
+                   FontSize="30"
+                
+                HorizontalOptions="Center" />
+            <Label Text="ที่อยู่" VerticalOptions="Center" 
+                HorizontalOptions="StartAndExpand"/>
+            <Entry Placeholder="กรุณาใส่ที่อยู่" 
+                   x:Name="AddressEntry"
+                   
+                   HorizontalOptions="FillAndExpand"/>
+            <Button Text="บันทึก" BackgroundColor="CornflowerBlue" TextColor="White"
+                    WidthRequest="80"
+                    CornerRadius="20"
+                    Clicked="Button_Clicked"
+                    
+                HorizontalOptions="Center"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

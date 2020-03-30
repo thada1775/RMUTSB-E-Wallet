@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.AllCurrencyPage"
+             Style="{StaticResource PageStyle}">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="รีเฟรช" 
+                     Order="Primary"
+                     Command="{Binding RefreshCommand}"
+                      />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout>
+            
+            <ActivityIndicator IsRunning="true" IsVisible="{Binding ProgressBar}" />
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10"/>
+                    <!--<RowDefinition Height="auto"/>-->
+                    <RowDefinition Height="*"/>
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <!--<Label Text="เงินทั้งหมด" Grid.Row="1" Grid.Column="0" 
+                FontSize="25"
+                   TextColor="Black"
+                   Margin="30,25,0,0"
+                   HorizontalOptions="Start"/>-->
+
+                <ListView x:Name="Currenlst" Grid.Row="1"  Grid.Column="0"
+                          ItemsSource="{Binding Currency_List}" Margin="10,0"
+                          SelectedItem="{Binding SelectCurrency}">
+                   
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="*"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="1.5*"/>
+                                        <ColumnDefinition Width="5*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackLayout Grid.Row="0" Grid.Column="0" VerticalOptions="Center">
+                                        <Image Source = "coin.png">
+                                            <Image.HeightRequest>
+                                                <OnPlatform x:TypeArguments="x:Double">
+                                                    <On Platform="iOS">30</On>
+                                                    <On Platform="Android,Windows">35</On>
+                                                </OnPlatform>
+                                            </Image.HeightRequest>
+                                        </Image>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Vertical" Grid.Row="0" Grid.Column="1">
+                                        <Label Text="{Binding TokenName}" FontSize="Large" TextColor="Black"/>
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Balance}" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                            <Label Text="{Binding TokenUnit}" FontSize="Medium"  VerticalTextAlignment="Center"/>
+                                        </StackLayout>
+                                    </StackLayout>
+
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+
+                <!--<StackLayout Grid.Row="2"  Grid.Column="0" Padding="40,10,0,0" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <ListView x:Name="Currenlst" ItemsSource="{Binding allCurrency}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Label Text="{Binding .}" TextColor="GreenYellow" FontSize="Medium" />
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>-->
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

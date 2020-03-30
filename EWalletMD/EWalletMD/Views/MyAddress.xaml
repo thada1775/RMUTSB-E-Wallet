@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms"
+             xmlns:zxcm="clr-namespace:ZXing.Common;assembly=zxing.portable"
+             mc:Ignorable="d"
+             Title="กระเป๋าเงินของฉัน"
+             Style="{StaticResource PageStyle}"
+             x:Class="EWalletMD.Views.MyAddress">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Padding="30,0">
+
+
+                <Label Text="กระเป๋าเงินของฉัน"
+                   FontSize="30"
+                 TextColor="Black"
+                HorizontalOptions="CenterAndExpand" />
+                
+                <StackLayout Orientation="Vertical">
+                    <Label Text="กุญแจสาธารณะ :"
+                           FontSize="Large"
+                       TextColor="Blue"/>
+                    <Label x:Name="PubKeyLabel" HorizontalOptions="FillAndExpand" TextColor="Default" 
+                           FontSize="Medium"
+                           TextDecorations="Underline"/>
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center">
+
+                    <zxing:ZXingBarcodeImageView x:Name="QrcodeGenerate" WidthRequest="300" HeightRequest="300" BarcodeValue="1337" BarcodeFormat="QR_CODE">
+                        <zxing:ZXingBarcodeImageView.BarcodeOptions>
+                            <zxcm:EncodingOptions Width="300" Height="300" />
+                        </zxing:ZXingBarcodeImageView.BarcodeOptions>
+                    </zxing:ZXingBarcodeImageView>
+
+                </StackLayout>
+                <StackLayout HorizontalOptions="Center">
+
+                    <Button x:Name="coppyButton" Text="คัดลอก" TextColor="White" BackgroundColor="CornflowerBlue" WidthRequest="100"
+                            HorizontalOptions="Center"
+                            Clicked="coppyButton_Clicked"
+                            CornerRadius="20"/>
+
+                </StackLayout>
+                
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.ViewKeyOptionPage">
+    <ContentPage.Content>
+        <StackLayout Padding="30,0">
+            <Label Text="ข้อมูลบัญชี" FontSize="30" TextColor="Maroon"></Label>
+            <ListView x:Name="MainListView" HasUnevenRows="True" ItemSelected="MainListView_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <StackLayout Orientation="Horizontal" Margin="10" >
+                                    <Image Source = "{Binding Image}" >
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">30</On>
+                                                <On Platform="Android,Windows">30</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
+                                    <Label TextColor="Navy" Text="{Binding Name}" FontSize="Large"></Label>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

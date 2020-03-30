@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.MenuPage"
+             Title="Menu"
+             Style="{StaticResource PageStyle}">
+
+    <StackLayout VerticalOptions="FillAndExpand">
+        <Grid VerticalOptions="FillAndExpand" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Image Source ="LOGO2.png" Grid.Row="0" BackgroundColor="BlueViolet" VerticalOptions="FillAndExpand">
+                <Image.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS">30</On>
+                        <On Platform="Android,Windows">150</On>
+                    </OnPlatform>
+                </Image.HeightRequest>
+            </Image>
+            <ListView x:Name="ListViewMenu" Grid.Row="1" SeparatorVisibility="None"
+                  SeparatorColor="Blue"
+                    HasUnevenRows="True">
+                <d:ListView.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Item 1</x:String>
+                        <x:String>Item 2</x:String>
+                    </x:Array>
+                </d:ListView.ItemsSource>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="10">
+                                <StackLayout Orientation="Horizontal" Margin="5">
+                                    <Image Source = "{Binding Image}" >
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">30</On>
+                                                <On Platform="Android,Windows">20</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
+                                    <Label Text="{Binding Title}" d:Text="{Binding .}" FontSize="15" TextColor="Black" VerticalTextAlignment="Center" Margin="20,0,0,0"/>
+                                </StackLayout>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

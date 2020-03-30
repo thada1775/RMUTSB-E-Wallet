@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.RecoverPage"
+             Title="กู้คินกระเป๋าเงิน"
+             Style="{StaticResource PageStyle}">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="30,0">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <Label Text="กรุณาใส่คีย์ข้อความเพื่อกู้คืนกระเป๋าเงิน" Grid.Row="0" Grid.Column="0"  Grid.ColumnSpan="3"
+                       FontSize="Large"
+                       TextColor="Blue"
+                       HorizontalTextAlignment="Center"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"/>
+
+                <StackLayout Grid.Row="1" Grid.Column="0">
+                    <Entry 
+                            x:Name="key1"
+                            WidthRequest="100"
+                       HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"
+                           />
+
+                    <Label Text="1" 
+                      HorizontalOptions="Center"
+                       VerticalTextAlignment="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="1" Grid.Column="1" >
+                    <Entry Text="" 
+                            x:Name="key2"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="2" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="1" Grid.Column="2">
+                    <Entry Text="" 
+                            x:Name="key3"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="3" 
+                             HorizontalOptions="Center"       
+                       />
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="0" >
+                    <Entry Text="" 
+                            x:Name="key4"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="4" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="1">
+                    <Entry Text=""  
+                            x:Name="key5"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="5" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="2" Grid.Column="2">
+                    <Entry Text="" 
+                            x:Name="key6"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="6" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="0" >
+                    <Entry Text="" 
+                            x:Name="key7"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="7" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="1">
+                    <Entry Text="" 
+                            x:Name="key8"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="8" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Grid.Column="2">
+                    <Entry Text=""  
+                            x:Name="key9"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="9" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout  Grid.Row="4" Grid.Column="0">
+                    <Entry Text="" 
+                            x:Name="key10"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="10" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Grid.Column="1" >
+                    <Entry Text="" 
+                            x:Name="key11"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="11" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Grid.Column="2" >
+                    <Entry Text="" 
+                            x:Name="key12"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="12" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" Grid.Column="0">
+                    <Entry Text="" 
+                            x:Name="key13"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="13" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" Grid.Column="1" >
+                    <Entry Text="" 
+                            x:Name="key14"
+                            HorizontalOptions="Center" WidthRequest="100"
+                           HorizontalTextAlignment="Center"
+                           />
+                    <Label Text="14" VerticalOptions="FillAndExpand"
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="5" Grid.Column="2" >
+                    <Entry Text="" 
+                            x:Name="key15"
+                            HorizontalOptions="Center" WidthRequest="100" 
+                           HorizontalTextAlignment="Center"
+                           />
+
+                    <Label Text="15" 
+                             HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Grid.Row="7" Grid.Column="0"  Grid.ColumnSpan="3" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Button Text="บันทึก" Grid.Row="6" Grid.Column="0"  Grid.ColumnSpan="3"
+                        HorizontalOptions="CenterAndExpand"
+                        VerticalOptions="Fill"
+                            x:Name="savekey"
+                            WidthRequest="100"
+                            CornerRadius="40"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"
+                            Clicked="Savekey_Clicked"   
+                            />
+
+                </StackLayout>
+                <!--**ปุ่มอยู่ด้านล่างยังไม่สำเร็จ-->
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

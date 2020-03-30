@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FormsPinView.Core;assembly=FormsPinView.Core"
+             mc:Ignorable="d"
+             Style="{StaticResource PageStyle}"
+             x:Class="EWalletMD.Views.InputPassPage">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="7*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source = "lock.png" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Row="0">
+                    <Image.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="iOS">30</On>
+                            <On Platform="Android,Windows">100</On>
+                        </OnPlatform>
+                    </Image.HeightRequest>
+                </Image>
+
+                <Label Text="กรุณาใส่รหัสผ่าน" TextColor="CornflowerBlue" FontSize="Large" Grid.Row="1"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Center"
+                   x:Name="AuthLabel"/>
+                
+                <local:PinView
+         HorizontalOptions="Center" Grid.Row="2"
+         PinLength="6"
+                    VerticalOptions="StartAndExpand"
+         Validator="{Binding ValidatorFunc}"
+         Error="PinView_Error"
+         Success="PinView_Success" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

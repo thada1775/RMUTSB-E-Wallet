@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.ItemsPage"
+             Title="{Binding Title}"
+             x:Name="BrowseItemsPage"
+             Style="{StaticResource PageStyle}">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="รีเฟรช" 
+                     Order="Primary"
+                     Command="{Binding RefreshCommand}"
+                     Clicked="AddItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+        <ActivityIndicator IsRunning="true" IsVisible="{Binding ProgressBar}" />
+        <StackLayout Padding="30,0">
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+
+                </Grid.ColumnDefinitions>
+                <StackLayout Orientation="Horizontal" WidthRequest="50" Grid.Row="0"  Grid.Column="0" Padding="0,30,0,20" >
+
+
+                    <StackLayout Orientation="Vertical" HeightRequest="50" HorizontalOptions="EndAndExpand">
+                        <!--<ImageButton Source="sent.png"
+                        WidthRequest="50"
+                        Aspect="Fill"
+                                 
+                        BackgroundColor="White"
+                        x:Name="Sendmoney"
+                        Clicked="Sendmoney_Clicked"       
+                        />-->
+                        <ImageButton Source = "moneytransfer96.png" CornerRadius="20" BackgroundColor="Transparent"
+                                     x:Name="Sendmoney" Clicked="Sendmoney_Clicked" >
+                            <ImageButton.HeightRequest>
+                                <OnPlatform x:TypeArguments="x:Double">
+                                    <On Platform="iOS">30</On>
+                                    <On Platform="Android,Windows">60</On>
+                                </OnPlatform>
+                            </ImageButton.HeightRequest>
+                        </ImageButton>
+                        
+
+                    </StackLayout>
+
+                    <ImageButton Source = "receivedollar64.png" CornerRadius="20" BackgroundColor="Transparent" 
+                                     x:Name="Receipmoney"
+                                     Clicked="Receipmoney_Clicked" >
+                        <ImageButton.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">30</On>
+                                <On Platform="Android,Windows">60</On>
+                            </OnPlatform>
+                        </ImageButton.HeightRequest>
+                    </ImageButton>
+                    <!--<StackLayout Orientation="Horizontal" HeightRequest="50" Padding="20,0,0,0" >
+                        <ImageButton Source="incomes"
+                        WidthRequest="50"
+                        Aspect="Fill"      
+                        BackgroundColor="White"
+                        x:Name="Receipmoney"
+                        Clicked="Receipmoney_Clicked"       
+                        />
+                    </StackLayout>-->
+
+                    <!--<ImageButton Source="sent.png"
+                             BackgroundColor="White"
+                                 Aspect="AspectFit"
+                                
+                        x:Name="qrcodeButton"
+                        Clicked="Sendmoney_Clicked"/>-->
+
+                    <!--<ImageButton Source="incomes"
+                                 Aspect="AspectFit"
+                    
+                        WidthRequest="20"
+                             BackgroundColor="White"
+                        x:Name="sentButton"
+                        Clicked="Receipmoney_Clicked"        
+                        />-->
+
+
+                </StackLayout>
+
+                <StackLayout Grid.Row="1"  Grid.Column="0"  VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+
+                    <Label Text="{Binding balance}"
+                      x:Name="balanceLabel"
+                       TextColor="Blue"
+                       FontSize="40"
+                 />
+
+                    <Label Text="{Binding Currency}"  FontSize="Large" TextColor="Black" HorizontalOptions="Center" HorizontalTextAlignment="End"/>
+
+                    <Image Source="{Binding ImageTran}" 
+                           Aspect="AspectFill"/>
+
+                </StackLayout>
+                
+
+                    <StackLayout Grid.Row="2"  Grid.Column="0"  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <ListView x:Name="lsttran" ItemsSource="{Binding Transactions}" 
+                              CachingStrategy="RecycleElement"
+                              SelectedItem="{Binding SelectingTransaction}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Vertical">
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="10*" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="Auto" />
+
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="30*" />
+                                                <ColumnDefinition Width="70*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label  Text="{Binding Operation}" TextColor="{Binding MyTextColor}" FontSize="Small" HorizontalTextAlignment="Start" 
+                                                VerticalTextAlignment="Center" Grid.Row="1" Grid.Column="0"/>
+
+
+
+                                            <Label   Text="{Binding Time}" FontSize="Default" HorizontalTextAlignment="End" 
+                                                 Grid.Row="1" Grid.Column="1"/>
+
+                                            <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.ColumnSpan="2" >
+                                                <Label  Text="{Binding Address}" TextColor="Black" FontSize="Medium" HorizontalTextAlignment="Start"/>
+
+                                            </StackLayout>
+
+                                            <Label Text="{Binding Amount}" TextColor="{Binding MyTextColor}" FontSize="Large" HorizontalTextAlignment="Start"
+                                                   Grid.Row="3" Grid.ColumnSpan="2"/>
+
+
+                                            <StackLayout Orientation="Horizontal" Grid.Row="4" Grid.ColumnSpan="3" IsVisible="{Binding VisibleReference}">
+                                                <Label Text="{Binding ReferenceCode}" x:Name="Refer" TextColor="Black" FontSize="Default" HorizontalTextAlignment="Start" BackgroundColor="AliceBlue"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </StackLayout>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

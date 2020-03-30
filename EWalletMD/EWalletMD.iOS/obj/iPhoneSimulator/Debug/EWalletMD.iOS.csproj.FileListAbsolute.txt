@@ -1,0 +1,160 @@
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.iOS.exe
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.iOS.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\LiteDB.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\NBitcoin.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Buffers.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Net.Requests.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.API.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.WalletService.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pt-br\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.dll
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csprojAssemblyReference.cache
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csproj.CoreCompileInputs.cache
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csproj.CopyComplete
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.exe
+D:\Users\THLIGHT\source\repos\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.iOS.exe
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.iOS.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.dll.mdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\CommonServiceLocator.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\FormsPinView.Core.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\FormsPinView.iOS.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\LiteDB.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\GalaSoft.MvvmLight.Extras.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\GalaSoft.MvvmLight.Extras.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\GalaSoft.MvvmLight.Platform.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\GalaSoft.MvvmLight.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\GalaSoft.MvvmLight.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\NBitcoin.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Newtonsoft.Json.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Buffers.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Net.Http.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\System.Net.Requests.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Plugin.LocalNotifications.Abstractions.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Plugin.LocalNotifications.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Essentials.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Core.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Xaml.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ar\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ca\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\cs\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\da\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\de\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\el\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\es\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\fi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\fr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\he\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\hu\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\id\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\it\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ja\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ko\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ms\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\nb\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\nl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pl\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pt-br\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\pt\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ro\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ru\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\sk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\sv\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\th\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\tr\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\uk\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\vi\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-HK\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-Hans\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zh-Hant\Xamarin.Forms.Platform.iOS.resources.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Plugin.Clipboard.Abstractions.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Plugin.Clipboard.Abstractions.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Plugin.Clipboard.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ZXing.Net.Mobile.Core.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ZXingNetMobile.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\zxing.portable.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ZXing.Net.Mobile.Forms.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\ZXing.Net.Mobile.Forms.iOS.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.WalletService.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.API.dll
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\EWalletMD.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.Platform.iOS.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.WalletService.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.WalletService.dll.mdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.API.pdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\bin\iPhoneSimulator\Debug\Thaismartcontract.API.dll.mdb
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\ibtool\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\actool\_PartialAppManifest.items
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\actool\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\coremlc\_PartialAppManifest.items
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\coremlc\_BundleResourceWithLogicalName.items
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\optimized\
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csprojAssemblyReference.cache
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csproj.CoreCompileInputs.cache
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\XamlC.stamp
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.csproj.CopyComplete
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.exe
+D:\Users\THLIGHT\source\repos\EWalletMD 2\EWalletMD\EWalletMD\EWalletMD.iOS\obj\iPhoneSimulator\Debug\EWalletMD.iOS.pdb

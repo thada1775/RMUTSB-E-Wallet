@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.AddContractPage"
+             Title="เพิ่มรหัสสัญญา"
+             Style="{StaticResource PageStyle}">
+    <ContentPage.Content>
+        <StackLayout Padding="20,0"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="1*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--<Image BackgroundColor="Transparent" Source = "contract.png" Grid.Row="0" VerticalOptions="CenterAndExpand" >
+                <Image.HeightRequest>
+                    <OnPlatform x:TypeArguments="x:Double">
+                        <On Platform="iOS">30</On>
+                        <On Platform="Android,Windows">100</On>
+                    </OnPlatform>
+                </Image.HeightRequest>
+                </Image>-->
+
+                <StackLayout Grid.Row="1" Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand">
+                <BoxView Color="Blue"
+             HeightRequest="10"
+             HorizontalOptions="Fill" />
+                <Frame BorderColor="Gray" HasShadow="True" Grid.Row="1" VerticalOptions="FillAndExpand">
+                    <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
+                        <Label Text="รหัสสัญญา"
+                       TextColor="Black"
+                FontSize="Large"
+                HorizontalOptions="CenterAndExpand" />
+                        <StackLayout Orientation="Horizontal"  HorizontalOptions="FillAndExpand">
+                            <Entry Placeholder="กรุณาใส่รหัสสัญญา"
+                   x:Name="addcontract"
+                       TextChanged="Addcontract_TextChanged"
+                   HorizontalOptions="FillAndExpand"/>
+
+                            <ImageButton BackgroundColor="Transparent" Source = "qr_code.png"  Aspect="Fill"
+                                     x:Name="qrcodeButton" Clicked="QrcodeButton_Clicked" >
+                                <ImageButton.HeightRequest>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="iOS">30</On>
+                                        <On Platform="Android,Windows">30</On>
+                                    </OnPlatform>
+                                </ImageButton.HeightRequest>
+                                <ImageButton.WidthRequest>
+                                    <OnPlatform x:TypeArguments="x:Double">
+                                        <On Platform="iOS">30</On>
+                                        <On Platform="Android,Windows">30</On>
+                                    </OnPlatform>
+                                </ImageButton.WidthRequest>
+
+                            </ImageButton>
+
+
+                            <!--<ImageButton Source="qr_code.png"
+                            Aspect="Fill"
+                            HeightRequest="35"
+                            WidthRequest="35"
+                            x:Name="qrcodeButton"
+                            Clicked="QrcodeButton_Clicked"
+                            BackgroundColor="White"       
+                    />-->
+
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" HeightRequest="50" Grid.Row="3" Grid.Column="0" >
+                            <ImageButton Source="credit_card.png" BackgroundColor="Transparent"
+                        WidthRequest="50"
+                        Aspect="Fill"
+                                 HorizontalOptions="CenterAndExpand"
+                        x:Name="buttoncontract"
+                        Clicked="AddContract_Clicked"       
+                        />
+                        </StackLayout>
+
+
+                    </StackLayout>
+                </Frame>
+                </StackLayout>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="EWalletMD.Views.SendMoneyPage"
+             Style="{StaticResource PageStyle}">
+    <ContentPage.Content>
+
+        <StackLayout VerticalOptions="CenterAndExpand" Padding="30,0" >
+            
+            <StackLayout Orientation="Horizontal" Grid.Row="1"  Grid.Column="0">
+                <Label Text="Unit" VerticalOptions="Center" FontSize="30" TextColor="CornflowerBlue"
+                       x:Name="CurrencyLabelTop"/>
+                <Label Text="สกุลเงิน" VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"   HorizontalOptions="FillAndExpand">
+                <Entry Placeholder="ส่งไปยัง" HorizontalOptions="FillAndExpand"
+                       TextChanged="receiver_TextChanged"
+                    x:Name="receiver"/>
+                <ImageButton Source="qr_code.png"
+                    HorizontalOptions="Center"
+                    WidthRequest="30"
+                    BackgroundColor="White"
+                    x:Name="qrcodeButton"
+                    Clicked="QrcodeButton_Clicked"      
+                    />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  >
+                <Label Text="จำนวน" VerticalOptions="Center" FontSize="Medium"
+                       />
+                <Label Text="ค่าธรรมเนียม" VerticalOptions="Center" FontSize="Medium" HorizontalOptions="EndAndExpand"
+                       
+                       />
+                <Label Text="0" VerticalOptions="Center" FontSize="Medium" 
+                       x:Name="FeeLabel"
+                       />
+                
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"  >
+                <Entry Placeholder="0.00" HorizontalOptions="FillAndExpand"
+                       TextChanged="amountEntry_TextChanged"
+                       Keyboard="Numeric"
+                    x:Name="amountEntry"/>
+                <Label Text="Unit" VerticalOptions="Center"
+                       x:Name="CurrencyLable"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="คงเหลือ" VerticalOptions="Center"  FontSize="Medium"/>
+                <Label Text="0.00" VerticalOptions="Center" FontSize="Medium"
+                       x:Name="LeftBalanceLabel"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                
+                <Entry Placeholder="หมายเหตุ"  WidthRequest="200"
+                    x:Name="reference" HorizontalOptions="FillAndExpand"/>
+                
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal">
+                <Button Text="ส่ง" x:Name="sendbutton" Clicked="Sendbutton_Clicked" HorizontalOptions="EndAndExpand"
+                        CornerRadius="20"
+                        BackgroundColor="CornflowerBlue"
+                        TextColor="White"/>
+            </StackLayout>
+            
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

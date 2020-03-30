@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:local="clr-namespace:FormsPinView.Core;assembly=FormsPinView.Core"
+             mc:Ignorable="d"
+             Style="{StaticResource PageStyle}"
+             x:Class="EWalletMD.Views.AuthenPinView">
+    
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Label Text="กรุณากำหนดรหัสผ่านครั้งแรก" TextColor="CornflowerBlue" FontSize="Large" 
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="Center"
+                   x:Name="AuthLabel"/>
+            <local:PinView
+         HorizontalOptions="Center"
+         VerticalOptions="CenterAndExpand"
+         PinLength="6"
+         Validator="{Binding ValidatorFunc}"
+         Error="PinView_Error"
+         Success="PinView_Success" />
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

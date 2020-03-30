@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:zxing="clr-namespace:ZXing.Net.Mobile.Forms;assembly=ZXing.Net.Mobile.Forms" 
+             x:Class="EWalletMD.Views.ReceiveMoneyPage"
+             Style="{StaticResource PageStyle}">
+    <ContentPage.Content>
+
+        <Grid Padding="30,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackLayout Orientation="Horizontal" Grid.Row="1"  Grid.Column="0">
+                <Label Text="Unit" VerticalOptions="Center" FontSize="30" TextColor="CornflowerBlue"
+                       x:Name="CurrencyLabelTop"/>
+                <Label Text="สกุลเงิน" VerticalOptions="Center"/>
+            </StackLayout>
+            <StackLayout Orientation="Vertical" Grid.Row="2"  Grid.Column="0">
+                <Entry Placeholder="0.00"  WidthRequest="300" 
+                    x:Name="amountEntry"
+                    TextChanged="AmountEntry_TextChanged"
+                       HorizontalOptions="FillAndExpand"
+                       />
+                <Label Text="UNIT" VerticalOptions="Center" 
+                       x:Name="CurrencyLabel" HorizontalOptions="End"/>
+
+            </StackLayout>
+            <StackLayout x:Name="stackPrinc" Grid.Row="3"  Grid.Column="0">
+
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" Grid.Row="4"  Grid.Column="0">
+                <Entry WidthRequest="300"
+                    IsReadOnly="True"
+                    x:Name="pbkeyEntry"
+                       HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+                <StackLayout Orientation="Horizontal" Grid.Row="5"  Grid.Column="0">
+                    <Button Text="คัดลอก" 
+                        WidthRequest="100"
+                        HorizontalOptions="CenterAndExpand"
+                        x:Name="coppyButton"
+                        Clicked="CoppyButton_Clicked"
+                            BackgroundColor="CornflowerBlue"
+                            CornerRadius="20"
+                            TextColor="White"/>
+                </StackLayout>
+            </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

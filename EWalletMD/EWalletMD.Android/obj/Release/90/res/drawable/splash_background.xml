@@ -1,0 +1,3 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">”
+  <item><color android:color="#00bfff" />”
+  </item><item><bitmap android:src="@drawable/logo" android:tileMode="disabled" android:gravity="center" /></item></layer-list>
