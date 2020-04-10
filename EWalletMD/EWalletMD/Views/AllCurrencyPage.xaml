@@ -9,8 +9,11 @@
              Style="{StaticResource PageStyle}">
     
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="รีเฟรช" 
+        <ToolbarItem Text="รีเฟรช"
+                     x:Name="refreshButton"
                      Order="Primary"
+                     IconImageSource="refresh.png"
+                     IsEnabled="{Binding IsEnabledRefreshButton}"
                      Command="{Binding RefreshCommand}"
                       />
     </ContentPage.ToolbarItems>

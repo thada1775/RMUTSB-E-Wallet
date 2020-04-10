@@ -9,12 +9,12 @@
              x:Class="EWalletMD.Views.InputPassPage">
     <ContentPage.Content>
 
-        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
-            <Grid>
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20,0">
+            <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="6*"/>
-                    <RowDefinition Height="1*"/>
-                    <RowDefinition Height="7*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="8*"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
@@ -35,9 +35,9 @@
                    x:Name="AuthLabel"/>
                 
                 <local:PinView
-         HorizontalOptions="Center" Grid.Row="2"
-         PinLength="6"
-                    VerticalOptions="StartAndExpand"
+         HorizontalOptions="CenterAndExpand" Grid.Row="2"
+         VerticalOptions="FillAndExpand"
+         PinLength="6"        
          Validator="{Binding ValidatorFunc}"
          Error="PinView_Error"
          Success="PinView_Success" />

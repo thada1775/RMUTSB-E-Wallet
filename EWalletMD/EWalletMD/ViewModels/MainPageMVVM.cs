@@ -36,7 +36,7 @@ namespace EWalletMD.ViewModels
         //private bool resetBit = false;
         //private List<WalletContract> mycontracts;
         //private List<WalletService> mywalletServices = new List<WalletService>();
-        private ContractService contractService;
+        //private ContractService contractService;
         //private BitcoinSecret privateKey;
         private ContactService contactService;
         private List<string> alltransactions = new List<string>();
@@ -64,7 +64,10 @@ namespace EWalletMD.ViewModels
             string connectionString = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.LocalApplicationData), "tsc-wallet.db");
             //contractService = new ContractService(connectionString, new DigibyteAPI(new APIOptions() { BaseURL = "https://digibyteblockexplorer.com" }));   //รุบุที่อยู่รหัสสัญญา
             //contractService = new ContractService(connectionString, new DigibyteAPI(new APIOptions() { BaseURL = await apiBlockExplorer.GetBlockExplorer() }));   //รุบุที่อยู่รหัสสัญญา0
-            await GenerateEMoney();
+
+            //await GenerateEMoney();
+            var task = Task.Factory.StartNew(async () => await GenerateEMoney());
+            task.Wait();
         }
 
 
@@ -111,11 +114,13 @@ namespace EWalletMD.ViewModels
             }
         }
 
-        private async void RefreshAction()
+        private void RefreshAction()
         {
             if (IsDone)
             {
-                await GenerateEMoney();
+                //await GenerateEMoney();
+                var task = Task.Factory.StartNew(async () => await GenerateEMoney());
+                task.Wait();
             }
         }
         private ObservableCollection<LedgerTran> _transactions { get; set; }
@@ -133,8 +138,8 @@ namespace EWalletMD.ViewModels
         }
 
 
-        private bool isUpdated = false;
-        private Ledger shownLedger;
+        //private bool isUpdated = false;
+        //private Ledger shownLedger;
 
         private LedgerTran _selectingTransaction { get; set; }
         public LedgerTran SelectingTransaction
@@ -175,19 +180,19 @@ namespace EWalletMD.ViewModels
             catch(Exception e)
             {
                 ProgressBar = false;
-                IsDone = true;
-                return;
+                //IsDone = true;
+                //return;
             }
             IsDone = true;
             await ShowEMoney();
             
         }
+        public Account lastAccount;
         public async Task ShowEMoney()
         {
             try
             {
-                
-                var lastAccount = _account.AccountService.GetAccount(_account.WitnessProgram);
+                lastAccount = _account.AccountService.GetAccount(_account.WitnessProgram);
                 
                 //var allmycontracts = contractService.FindLocalContract();
                 //var currentContract = allmycontracts.First(c => c.NameString == _account.TokenName);

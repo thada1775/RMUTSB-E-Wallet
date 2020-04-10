@@ -15,7 +15,7 @@ namespace EWalletMD.Views
     public partial class ContactPage : ContentPage
     {
         private ContactService contactService;
-        private ObservableCollection<Contact> itemStates;
+        //private ObservableCollection<Contact> itemStates;
         public ContactPage()
         {
             
@@ -41,7 +41,6 @@ namespace EWalletMD.Views
                 accountList.Add(new AccountList {
                     Name = contact.Name,
                     Address = contact.Address, 
-                    
                     ImageIcon = "user.png",
                     ImageEdit = "gear.png"
                 });
@@ -49,7 +48,7 @@ namespace EWalletMD.Views
             if(accountList.Count != 0)
             {
                 indicateLabel.IsVisible = false;
-                titleLabel.IsVisible = true;
+                //titleLabel.IsVisible = true;
                 AccountList.IsEnabled = true;
                 AccountList.IsVisible = true;
                 AccountList.ItemsSource = accountList;
@@ -57,7 +56,7 @@ namespace EWalletMD.Views
             else
             {
                 AccountList.IsVisible = false;
-                titleLabel.IsVisible = false;
+                //titleLabel.IsVisible = false;
                 indicateLabel.IsVisible = true;
                 
                 

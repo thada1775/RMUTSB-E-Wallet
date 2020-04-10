@@ -7,7 +7,66 @@
              x:Class="EWalletMD.Views.WaringEntryPage"
              Style="{StaticResource PageStyle}">
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Margin="20">
+            <Grid VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <StackLayout VerticalOptions="EndAndExpand" Grid.Row="0">
+                    <!--<Image Source = "wallet.png">
+                        <Image.HeightRequest>
+                            <OnPlatform x:TypeArguments="x:Double">
+                                <On Platform="iOS">30</On>
+                                <On Platform="Android,Windows">70</On>
+                            </OnPlatform>
+                        </Image.HeightRequest>
+                    </Image>-->
+                </StackLayout>
+
+                <Frame CornerRadius="5" BackgroundColor="Transparent"  BorderColor="Gray" HasShadow="True" Grid.Row="1" VerticalOptions="Center">
+                    <StackLayout HorizontalOptions="CenterAndExpand">
+                        <Label Text="คำเตือน" FontAttributes="Bold"
+                            HorizontalTextAlignment="Start"
+                            TextColor="Red"
+                            FontSize="25"
+                            HorizontalOptions="Center" Margin="0,0"/>
+                        <BoxView Color="Gray"
+             HeightRequest="2"
+             HorizontalOptions="Fill" />
+                        <ScrollView>
+                            <Label HorizontalTextAlignment="Start"
+                                Text="คีย์กู้คืนข้อมูลส่วนบุคคลเป็นช่องทางเดียวที่จะใช้กู้กระเป๋าเงินคืนในกรณีที่โทรศัพท์สูญหาย แตก หรืออัพเกรด ระบบจะแสดงรายการคำที่คุณต้องเขียนลงบนกระดาษและเก็บให้ปลอดภัย"
+                                TextColor="Black"
+                                FontSize="Medium"
+                                HorizontalOptions="CenterAndExpand" Margin="0,0"/>
+                        </ScrollView>
+
+                    </StackLayout>
+                </Frame>
+
+                <StackLayout Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+                    <Button Text="สร้างคีย์"
+                            x:Name="genkey"
+                        TextColor="White"
+                            Clicked="go_GenKeyPage"
+                            WidthRequest="100"
+                        BackgroundColor="CornflowerBlue"
+                            HorizontalOptions="Center" 
+                            VerticalOptions="CenterAndExpand"
+                        CornerRadius="20"
+                            />
+                </StackLayout>
+            </Grid>
+        </StackLayout>
+
+        <!--<StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
 
             <ContentView Padding="20">
                 <Label
@@ -30,8 +89,6 @@
                             HorizontalOptions="Center" 
                             VerticalOptions="End"  
                             />
-
-            
-        </StackLayout>
+        </StackLayout>-->
     </ContentPage.Content>
 </ContentPage>

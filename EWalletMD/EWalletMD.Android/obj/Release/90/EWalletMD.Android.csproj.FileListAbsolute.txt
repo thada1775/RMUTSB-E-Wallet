@@ -1022,3 +1022,6 @@ D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\o
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\stamp\_GenerateJavaStubs.stamp
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\stamp\_GeneratePackageManagerJava.stamp
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\stamp\_ResolveLibraryProjectImports.stamp
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\res\drawable\next.png
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\res\drawable\emptycontact.png
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Release\90\res\drawable\refresh.png

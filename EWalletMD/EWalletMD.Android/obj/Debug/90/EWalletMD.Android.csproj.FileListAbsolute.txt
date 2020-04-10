@@ -2859,7 +2859,6 @@ D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\o
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\src\mono\MonoPackageManager_Resources.java
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\src\xamarin\essentials\fileProvider.java
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\bin\packaged_resources
-D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\src\com\thaismartcontract\ewalletmd2\R.java
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\typemap.jm.arm64-v8a.o
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\typemap.mj.arm64-v8a.o
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\typemap.jm.armeabi-v7a.o
@@ -2900,3 +2899,6 @@ D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\o
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\bin\com.thaismartcontract.RMUTSBEWallet.aab
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\bin\com.thaismartcontract.RMUTSBEWallet.apks
 D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\android\src\com\thaismartcontract\rmutsbewallet\R.java
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\res\drawable\next.png
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\res\drawable\emptycontact.png
+D:\Users\THLIGHT\source\repos\EWalletMD1\EWalletMD\EWalletMD\EWalletMD.Android\obj\Debug\90\res\drawable\refresh.png

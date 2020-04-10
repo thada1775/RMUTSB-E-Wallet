@@ -197,7 +197,6 @@
                             VerticalOptions="Start"  
                             />
                 </StackLayout>
-                <!--**ปุ่มอยู่ด้านล่างยังไม่สำเร็จ-->
 
             </Grid>
         </StackLayout>

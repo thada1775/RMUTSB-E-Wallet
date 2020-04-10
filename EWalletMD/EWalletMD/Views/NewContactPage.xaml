@@ -14,7 +14,7 @@
 
     <ContentPage.Content>
         <StackLayout Spacing="20" Padding="15">
-            <Label Text="ชื่อ"  FontSize="Medium" />
+            <Label Text="ชื่อ" TextColor="Black"  FontSize="Medium" />
             <StackLayout Orientation="Horizontal">
                 <Entry Placeholder="ตั้งชื่อบัญชี" x:Name="nameEntry" FontSize="Small" HorizontalOptions="FillAndExpand" />
 
@@ -28,7 +28,7 @@
                     FlexLayout.Grow="1"
                     Aspect="AspectFit"/>
             </StackLayout>
-            <Label Text="กุญแจสาธารณะ" FontSize="Medium" />
+            <Label Text="กุญแจสาธารณะ" TextColor="Black" FontSize="Medium" />
             <Entry Placeholder="ค่ากุญแจสาธารณะ" x:Name="pubkeyEntry" FontSize="Small" />
             <ImageButton Source="bin.png"
                     IsVisible="False"

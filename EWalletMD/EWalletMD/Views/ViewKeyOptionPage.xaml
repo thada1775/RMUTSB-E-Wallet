@@ -6,8 +6,8 @@
              mc:Ignorable="d"
              x:Class="EWalletMD.Views.ViewKeyOptionPage">
     <ContentPage.Content>
-        <StackLayout Padding="30,0">
-            <Label Text="ข้อมูลบัญชี" FontSize="30" TextColor="Maroon"></Label>
+        <StackLayout Margin="20,0">
+            <!--<Label Text="ข้อมูลบัญชี" FontSize="30" TextColor="Maroon"></Label>-->
             <ListView x:Name="MainListView" HasUnevenRows="True" ItemSelected="MainListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
@@ -22,7 +22,15 @@
                                             </OnPlatform>
                                         </Image.HeightRequest>
                                     </Image>
-                                    <Label TextColor="Navy" Text="{Binding Name}" FontSize="Large"></Label>
+                                    <Label TextColor="Navy" Text="{Binding Name}" VerticalTextAlignment="Center" FontSize="Medium"></Label>
+                                    <Image Source = "next.png" HorizontalOptions="EndAndExpand">
+                                        <Image.HeightRequest>
+                                            <OnPlatform x:TypeArguments="x:Double">
+                                                <On Platform="iOS">30</On>
+                                                <On Platform="Android,Windows">20</On>
+                                            </OnPlatform>
+                                        </Image.HeightRequest>
+                                    </Image>
                                 </StackLayout>
                             </Grid>
                         </ViewCell>

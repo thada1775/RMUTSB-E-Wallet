@@ -49,6 +49,7 @@ namespace EWalletMD.ViewModels
             RefreshCommand = new RelayCommand(RefreshAction);
             this.Navigation = navigation;
             //Task.Run(() => InitializeEMoney().Wait());
+            IsEnabledRefreshButton = true;
         }
 
         //public void StopTimer()
@@ -91,7 +92,9 @@ namespace EWalletMD.ViewModels
             //contractService = new ContractService(connectionString, new DigibyteAPI(new APIOptions() { BaseURL = "https://digibyteblockexplorer.com" }));   //รุบุที่อยู่รหัสสัญญา
             contractService = new ContractService(connectionString, new DigibyteAPI(new APIOptions() { BaseURL = await apiBlockExplorer.GetBlockExplorer() }));   //รุบุที่อยู่รหัสสัญญา
 
-            await GenerateEMoney();
+            //await GenerateEMoney();
+            var task = Task.Factory.StartNew(async () => await GenerateEMoney());
+            task.Wait();
             StartTimmer();
         }
 
@@ -122,6 +125,17 @@ namespace EWalletMD.ViewModels
             }
         }
 
+        private bool _isEnabledRefreshButton { get; set; }
+        public bool IsEnabledRefreshButton
+        {
+            get { return _isEnabledRefreshButton;  }
+            set
+            {
+                _isEnabledRefreshButton = value;
+                RaisePropertyChanged();
+            }
+        }
+
         private Account _selectCurrency { get; set; }
         public Account SelectCurrency
         {
@@ -142,11 +156,13 @@ namespace EWalletMD.ViewModels
             await Navigation.PushAsync(new ItemsPage(SelectCurrency));
         }
 
-        private async void RefreshAction()
+        private void RefreshAction()
         {
             if (IsDone)
             {
-                await GenerateEMoney();
+                //await GenerateEMoney();
+                var task = Task.Factory.StartNew(async () => await GenerateEMoney());
+                task.Wait();
             }
         }
 
@@ -155,6 +171,7 @@ namespace EWalletMD.ViewModels
 
         public async Task GenerateEMoney()
         {
+            IsEnabledRefreshButton = false;
             IsDone = false;
             triggerStartTimer = false;      //test stoptimer
             ProgressBar = true;
@@ -177,57 +194,55 @@ namespace EWalletMD.ViewModels
                 isUpdated = true;
             }
 
-            if (isUpdated)
+
+            mywalletServices.Clear();
+            myaccountServices.Clear();
+            myAccounts.Clear();
+            mycontracts = contractService.FindLocalContract();
+
+            foreach (var con in mycontracts)
             {
-                mywalletServices.Clear();
-                myaccountServices.Clear();
-                myAccounts.Clear();
-                mycontracts = contractService.FindLocalContract();
+                mywalletServices.Add(contractService.CreateWalletService(con, privateKey));
+            }
+            foreach (var service in mywalletServices)
+            {
+                if (isUpdated)       //Have new transaction --> Rescan
+                {
+                    await service.Rescan(resetBit);
+                }
+                myaccountServices.Add(service.GetAccountService());
+            }
 
-                foreach (var con in mycontracts)
+            foreach (var service in myaccountServices)
+            {
+                myAccounts.Add(service.GetAccount(privateKey.GetAddress()));
+            }
+            try
+            {
+                Currency_List.Clear();
+                foreach (var account in myAccounts)
                 {
-                    mywalletServices.Add(contractService.CreateWalletService(con, privateKey));
-                }
-                foreach (var service in mywalletServices)
-                {
-                        await service.Rescan(resetBit);
-                        myaccountServices.Add(service.GetAccountService());
-                }
-
-                foreach (var service in myaccountServices)
-                {
-                    myAccounts.Add(service.GetAccount(privateKey.GetAddress()));
-                }
-                try
-                {
-                    Currency_List.Clear();
-                    foreach (var account in myAccounts)
-                    {
-                        var currentContract = mycontracts.First(c => c.NameString == account.TokenName);
-                        string currency = account.TokenUnit + "\t\t\t\t" + account.Balance.ToString("N" + currentContract.NoOfDecimal.ToString());
-                        Currency.Add(currency);
-                        Currency_List.Add(account);
-                    }  
-                }
-                catch (Exception e)
-                {
-                    if (false)
-                    {
-                        resetBit = true;
-                    }
-                    else
-                    {
-                        Thread.Sleep(3000);
-                    }
-                    ProgressBar = false;
-                    IsDone = true;
+                    //var currentContract = mycontracts.First(c => c.NameString == account.TokenName);
+                    //string currency = account.TokenUnit + "\t\t\t\t" + account.Balance.ToString("N" + currentContract.NoOfDecimal.ToString());
+                    //Currency.Add(currency);
+                    Currency_List.Add(account);
                 }
             }
+            catch (Exception e)
+            {
+
+                Thread.Sleep(3000);
+                ProgressBar = false;
+                IsDone = true;
+                IsEnabledRefreshButton = false;
+            }
+
             resetBit = false;
             isUpdated = false;
             ProgressBar = false;
             triggerStartTimer = true;
             IsDone = true;
+            IsEnabledRefreshButton = true;
         }
 
 

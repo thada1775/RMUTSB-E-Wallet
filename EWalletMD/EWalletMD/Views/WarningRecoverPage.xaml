@@ -20,18 +20,18 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                
+
                 <StackLayout VerticalOptions="EndAndExpand" Grid.Row="0">
-                    <Image Source = "wallet.png">
+                    <!--<Image Source = "wallet.png">
                         <Image.HeightRequest>
                             <OnPlatform x:TypeArguments="x:Double">
                                 <On Platform="iOS">30</On>
                                 <On Platform="Android,Windows">100</On>
                             </OnPlatform>
                         </Image.HeightRequest>
-                    </Image>
+                    </Image>-->
                 </StackLayout>
-                
+
                 <Frame CornerRadius="5" BackgroundColor="Transparent"  BorderColor="Gray" HasShadow="True" Grid.Row="1" VerticalOptions="Center">
                     <StackLayout HorizontalOptions="CenterAndExpand">
                         <Label Text="คำเตือน" FontAttributes="Bold"
@@ -42,18 +42,19 @@
                         <BoxView Color="Gray"
              HeightRequest="2"
              HorizontalOptions="Fill" />
-
-                        <Label HorizontalTextAlignment="Start"
+                        <ScrollView>
+                            <Label HorizontalTextAlignment="Start"
                                 Text="การกู้คืนกระเป๋าเงินจะทำให้กระเป๋าเงินเดิมที่ใช้อยู่ถูกแทนที่ด้วยกระเป๋าเงินใหม่"
                                 TextColor="Black"
                                 FontSize="Medium"
                                 HorizontalOptions="CenterAndExpand" Margin="0,0"/>
-                        
+                        </ScrollView>
+
                     </StackLayout>
                 </Frame>
 
                 <StackLayout Grid.Row="2" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
-                <Button Text="ดำเนินการต่อ"
+                    <Button Text="ดำเนินการต่อ"
                             x:Name="gotoRecover"
                         TextColor="White"
                             Clicked="gotoRecover_Clicked"
@@ -65,9 +66,6 @@
                             />
                 </StackLayout>
             </Grid>
-           
-            
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

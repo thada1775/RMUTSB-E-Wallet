@@ -25,31 +25,31 @@ namespace EWalletMD.Views
     [DesignTimeVisible(false)]
     public partial class ItemsPage : ContentPage
     {
-        ItemsViewModel viewModel;
+        //ItemsViewModel viewModel;
 
-        private KeyService keyService;
-        private CryptoKeyPair currentKeyPair;
+        //private KeyService keyService;
+        //private CryptoKeyPair currentKeyPair;
 
         private List<Account> myAccounts = new List<Account>();
         private List<AccountService> myaccountServices = new List<AccountService>();
-        private bool resetBit = false;
-        private List<WalletContract> mycontracts;
+        //private bool resetBit = false;
+        //private List<WalletContract> mycontracts;
         private List<WalletService> mywalletServices = new List<WalletService>();
-        private ContractService contractService;
-        private BitcoinSecret privateKey;
-        private BitcoinPubKeyAddress publicKey;
-        private WalletService walletService;
-        private ContactService contactService;
+        //private ContractService contractService;
+        //private BitcoinSecret privateKey;
+        //private BitcoinPubKeyAddress publicKey;
+        //private WalletService walletService;
+        //private ContactService contactService;
         private List<string> transactions = new List<string>();
-        private Account _account { get; set; }
-
+        //private Account _account { get; set; }
+        private readonly MainPageMVVM model;
         
         public ItemsPage(Account account)
         {
-            _account = account;
-            BindingContext = new MainPageMVVM(_account);
+            //_account = account;
+            model = new MainPageMVVM(account);
+            BindingContext = model;
             InitializeComponent();
-            Title = "ประวัติธุรกรรม";
             lsttran.HasUnevenRows = true;
 
             lsttran.ItemTapped += (object sender, ItemTappedEventArgs e) =>
@@ -67,11 +67,6 @@ namespace EWalletMD.Views
 
             };
         }
-        public void AddItem_Clicked(object sender, EventArgs e)
-        {
-            //await Navigation.PushModalAsync(new NavigationPage(new NewItemPage()));
-            
-        }
 
         protected override void OnAppearing()
         {
@@ -84,14 +79,14 @@ namespace EWalletMD.Views
             //await Navigation.PushModalAsync(new SendMoneyPage());
             //await Navigation.PushModalAsync(new NavigationPage(new SendMoneyPage())); 
             //Application.Current.MainPage = new NavigationPage(new SendMoneyPage());
-            await Navigation.PushAsync(new SendMoneyPage(_account));
+            await Navigation.PushAsync(new SendMoneyPage(model.lastAccount));
             
         }
 
         private async void Receipmoney_Clicked(object sender, EventArgs e)
         {
             //Navigation.PushModalAsync(new ReceiveMoneyPage());
-            await Navigation.PushAsync(new ReceiveMoneyPage(_account));
+            await Navigation.PushAsync(new ReceiveMoneyPage(model.lastAccount));
         }
     }
 }

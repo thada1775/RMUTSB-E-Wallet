@@ -9,19 +9,39 @@
              x:Class="EWalletMD.Views.AuthenPinView">
     
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            <Label Text="กรุณากำหนดรหัสผ่านครั้งแรก" TextColor="CornflowerBlue" FontSize="Large" 
+        <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Margin="20">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="6*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="7*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Image Source = "lock.png" VerticalOptions="CenterAndExpand" HorizontalOptions="Center" Grid.Row="0">
+                    <Image.HeightRequest>
+                        <OnPlatform x:TypeArguments="x:Double">
+                            <On Platform="iOS">30</On>
+                            <On Platform="Android,Windows">100</On>
+                        </OnPlatform>
+                    </Image.HeightRequest>
+                </Image>
+
+                <Label Text="กำหนดรหัสผ่านครั้งแรก" TextColor="CornflowerBlue" FontSize="Large" Grid.Row="1"
                    HorizontalOptions="CenterAndExpand"
                    VerticalOptions="Center"
                    x:Name="AuthLabel"/>
-            <local:PinView
-         HorizontalOptions="Center"
-         VerticalOptions="CenterAndExpand"
+
+                <local:PinView
+         HorizontalOptions="Center" Grid.Row="2"
          PinLength="6"
+                    VerticalOptions="StartAndExpand"
          Validator="{Binding ValidatorFunc}"
          Error="PinView_Error"
          Success="PinView_Success" />
-            
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

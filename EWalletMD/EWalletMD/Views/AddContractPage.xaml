@@ -30,10 +30,8 @@
                 </Image>-->
 
                 <StackLayout Grid.Row="1" Orientation="Vertical" Spacing="0" VerticalOptions="FillAndExpand">
-                <BoxView Color="Blue"
-             HeightRequest="10"
-             HorizontalOptions="Fill" />
-                <Frame BorderColor="Gray" HasShadow="True" Grid.Row="1" VerticalOptions="FillAndExpand">
+                
+                <Frame CornerRadius="50" HasShadow="True" Grid.Row="1" VerticalOptions="FillAndExpand">
                     <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" BackgroundColor="Transparent">
                         <Label Text="รหัสสัญญา"
                        TextColor="Black"
